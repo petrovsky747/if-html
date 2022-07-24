@@ -1,45 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="my first project on Front-end" />
-    <meta name="keywords" content="HTML, CSS, JS, React" />
-    <meta name="author" content="Maxim Petrovsky" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Title</title>
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="stylesheet" href="./styles/reset.css">
-  </head>
-  <body>
-  <section class="advantages">
-    <h1 class="advantages__title">What do we offer</h1>
-    <div class="advantages__highlight"></div>
-    <ul class="advantages__list">
-      <li class="advantages__item">
-        <div class="advantages__support">
-          <img class="advantages__image" src="./images/HeadsetMicOutlined%201.png" alt="Support 24/7">
-          <h2 class="advantages__subtitle">Support 24/7</h2>
-        </div>
-      </li>
-      <li class="advantages__item">
-        <div class="advantages__communication">
-          <img class="advantages__image" src="./images/ForumOutlined%201.png" alt="Communicate directly">
-          <h2 class="advantages__subtitle">Communicate directly</h2>
-        </div>
-      </li>
-      <li class="advantages__item">
-        <div class="advantages__booking">
-          <img class="advantages__image" src="./images/DevicesOutlined%201.png" alt="Book online">
-          <h2 class="advantages__subtitle">Book online</h2>
-        </div>
-      </li>
-      <li class="advantages__item">
-        <div class="advantages__reviews">
-          <img class="advantages__image" src="./images/ThumbUpAltOutlined%201.png" alt="Real guest reviews">
-          <h2 class="advantages__subtitle">Real guest reviews</h2>
-        </div>
-      </li>
-    </ul>
-  </section>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="my first project on Front-end" />
+  <meta name="keywords" content="HTML, CSS, JS, React" />
+  <meta name="author" content="Maxim Petrovsky" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TripHouse</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+<div class="container advantages__container">
+  <h1 class="title advantages__title">What do we offer</h1>
+  <div class="advantages__highlight"></div>
+  <div class="row advantages__row">
+    <div class="col advantages__col">
+      <img class="advantages__image" src="./images/HeadsetMicOutlined%201.png" alt="Support 24/7">
+      <h2 class="subtitle advantages__subtitle">Support 24/7</h2>
+    </div>
+    <div class="col advantages__col">
+      <img class="advantages__image" src="./images/ForumOutlined%201.png" alt="Communicate directly">
+      <h2 class="subtitle advantages__subtitle">Communicate directly</h2>
+    </div>
+    <div class="col advantages__col">
+      <img class="advantages__image" src="./images/DevicesOutlined%201.png" alt="Book online">
+      <h2 class="subtitle advantages__subtitle">Book online</h2>
+    </div>
+    <div class="col advantages__col">
+      <img class="advantages__image" src="./images/ThumbUpAltOutlined%201.png" alt="Real guest reviews">
+      <h2 class="subtitle advantages__subtitle">Real guest reviews</h2>
+    </div>
+  </div>
+</div>
+<div class="container footer_container">
+  <div class="row footer_row">
+    <div class="col footer_col">
+      <p class="footer_col_title">About</p>
+      <p class="footer_link">How Triphouse works</p>
+      <p class="footer_link">Careers</p>
+      <p class="footer_link">Privacy</p>
+      <p class="footer_link">Terms</p>
+      <p class="footer_copyright">© 2020 Triphouse, Inc. All rights reserved</p>
+    </div>
+    <div class="col footer_col">
+      <p class="footer_col_title">Property types</p>
+      <p class="footer_link">Guest houses</p>
+      <p class="footer_link">Hotels</p>
+      <p class="footer_link">Apartments</p>
+      <p class="footer_link">Villas</p>
+      <p class="footer_link">Holiday homes</p>
+      <p class="footer_link">Hostels</p>
+    </div>
+    <div class="col footer_col">
+      <p class="footer_col_title">Support</p>
+      <p class="footer_link">Contact Customer Service</p>
+      <p class="footer_link">FAQ</p>
+    </div>
+  </div>
+</div>
+</body>
 </html>
+
