@@ -13,7 +13,7 @@ body {
 
 .container {
     max-width: 1440px;
-    padding: 120px 104px 0;
+    padding: 120px 104px 120px;
     margin: 0 auto;
 }
 
@@ -61,7 +61,6 @@ body {
 
 .advantages__subtitle {
     margin-top: 48px;
-    margin-bottom: 122px;
 }
 
 .footer_container {
@@ -73,12 +72,14 @@ body {
 }
 
 .footer_col {
+    list-style: none;
     width: 33.33333%;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 1.2;
     text-align: left;
+    padding: 0;
 }
 
 .footer_col_title {
@@ -97,5 +98,6 @@ body {
     font-size: 14px;
     line-height: 1.2;
     color: #FFFFFF;
-    margin: 163px auto 120px 0;
+    margin-top: 40px;
+
 }
