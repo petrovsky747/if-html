@@ -10,24 +10,59 @@
   <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
+<section class="topsection">
+  <div class="container topsection__container">
+    <div class="topsection__header">
+      <div class="topsection__logo"></div>
+      <div class="topsection__header__items">
+        <ul class="topsection__header__links">
+          <li class="topsection__header__link active">Stays</li>
+          <li class="topsection__header__link">Attractions</li>
+        </ul>
+        <div class="topsection__header__buttons">
+          <div class="topsection__button__night"></div>
+          <div class="topsection__button__account"></div>
+        </div>
+      </div>
+    </div>
+    <h1 class="title topsection__title">Discover stays<br> to live, work or just relax</h1>
+    <div class="form">
+      <form class="topsection__form" action="./" method="get">
+        <label class="input__label topsection__input__label" for="city">Your destination or hotel name</label>
+        <label class="input__label topsection__input__label" for="date">Check-in &ndash; Check-out</label>
+        <label class="input__label topsection__input__label" for="guests"></label>
+        <div class="topsection__inputs">
+          <input class="input topsection__city" id="city" type="text" name="city" placeholder="New York"/>
+          <input class="input topsection__date" id="date" type="date" name="date" placeholder="Tue 15 Sept — Sat 19 Sept"/>
+          <input class="input topsection__guests" id="guests" type="text" name="guests" placeholder="2 Adults &ndash; 0 Children &ndash; 1 Room"/>
+          <button class="button topsection__button">Search</button>
+        </div>
+      </form>
+    </div>
+    <div class="topsection__apps">
+      <div class="topsection__googleplay"></div>
+      <div class="topsection__appstore"></div>
+    </div>
+  </div>
+</section>
 <div class="container advantages__container">
   <h1 class="title advantages__title">What do we offer</h1>
   <div class="advantages__highlight"></div>
   <div class="row advantages__row">
     <div class="col advantages__col">
-      <img class="advantages__image" src="./images/HeadsetMicOutlined%201.png" alt="Support 24/7">
+      <div class="advantages__image support"></div>
       <h2 class="subtitle advantages__subtitle">Support 24/7</h2>
     </div>
     <div class="col advantages__col">
-      <img class="advantages__image" src="./images/ForumOutlined%201.png" alt="Communicate directly">
+      <div class="advantages__image communication"></div>
       <h2 class="subtitle advantages__subtitle">Communicate directly</h2>
     </div>
     <div class="col advantages__col">
-      <img class="advantages__image" src="./images/DevicesOutlined%201.png" alt="Book online">
+      <div class="advantages__image booking"></div>
       <h2 class="subtitle advantages__subtitle">Book online</h2>
     </div>
     <div class="col advantages__col">
-      <img class="advantages__image" src="./images/ThumbUpAltOutlined%201.png" alt="Real guest reviews">
+      <div class="advantages__image reviews"></div>
       <h2 class="subtitle advantages__subtitle">Real guest reviews</h2>
     </div>
   </div>
