@@ -13,7 +13,6 @@ body {
 
 .container {
     max-width: 1440px;
-    height: 100%;
     padding: 120px 104px 120px;
     margin: 0 auto;
 }
@@ -40,6 +39,10 @@ body {
     line-height: 0.8;
 }
 
+.topsection {
+    min-height: 100vh;
+}
+
 .topsection__container {
     background-image: url("./../images/topsection_background.jpg") ;
     background-attachment: scroll;
@@ -47,7 +50,6 @@ body {
     background-position: center;
     max-width: 1440px;
     padding: 0;
-    /* height: 100vh; */
 }
 
 .topsection__header {
@@ -67,23 +69,22 @@ body {
 
 .topsection__header__items {
     display: flex;
-    justify-content: space-between;
     gap: 51px;
 }
 
 .topsection__header__links {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    justify-content: space-around;
+    align-items: center;
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 1.17;
-    list-style: none;
-    display: flex;
-    gap: 24px;
-    justify-content: space-around;
-    align-items: center;
-    padding-left: 550px;
+
 }
 
 .topsection__header__link {
@@ -142,8 +143,6 @@ body {
 
 .topsection__inputs {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     background: #FFFFFF;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -155,17 +154,22 @@ body {
     margin-top: 24px;
 }
 
-.topsection__input__label {
+.topsection__input__title {
+    padding-left: 104px;
+    display: flex;
+    gap: 220px;
+ }
+
+.input__title {
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.16;
-    padding-right: 216px;
 }
 
-.topsection__input__label:first-child {
+.input__title:first-child {
     padding-left: 26px;
 }
 
@@ -177,7 +181,7 @@ body {
     font-size: 18px;
     line-height: 1.17;
     border-radius: 8px;
-    border: none;
+    border-color: transparent;
 }
 
 .topsection__city {

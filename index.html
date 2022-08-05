@@ -26,14 +26,18 @@
       </div>
     </div>
     <h1 class="title topsection__title">Discover stays<br> to live, work or just relax</h1>
+    <div class="topsection__input__title">
+      <h3 class="input__title">Your destination or hotel name</h3>
+      <h3 class="input__title">Check-in &ndash; Check-out</h3>
+    </div>
     <div class="form">
       <form class="topsection__form" action="./" method="get">
-        <label class="input__label topsection__input__label" for="city">Your destination or hotel name</label>
-        <label class="input__label topsection__input__label" for="date">Check-in &ndash; Check-out</label>
-        <label class="input__label topsection__input__label" for="guests"></label>
         <div class="topsection__inputs">
+          <label class="input__label topsection__input__label" for="city"></label>
           <input class="input topsection__city" id="city" type="text" name="city" placeholder="New York"/>
-          <input class="input topsection__date" id="date" type="date" name="date" placeholder="Tue 15 Sept — Sat 19 Sept"/>
+          <label class="input__label topsection__input__label" for="date"></label>
+          <input class="input topsection__date" id="date" type="date" name="date"/>
+          <label class="input__label topsection__input__label" for="guests"></label>
           <input class="input topsection__guests" id="guests" type="text" name="guests" placeholder="2 Adults &ndash; 0 Children &ndash; 1 Room"/>
           <button class="button topsection__button">Search</button>
         </div>
