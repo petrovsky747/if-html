@@ -50,7 +50,7 @@ body {
     padding: 0;
 }
 
-.topsection__header {
+.header {
     display: flex;
     justify-content: space-between;
     padding: 51px 0 202px;
@@ -58,19 +58,17 @@ body {
     margin: 0 auto;
 }
 
-.topsection__logo {
-    background-image: url("../images/topsection_sprite.png");
-    background-repeat: no-repeat;
-    background-position-x: 0;
+.header__logo {
     width: 205px;
+    height: 40px;
 }
 
-.topsection__header__items {
+.header__items {
     display: flex;
     gap: 51px;
 }
 
-.topsection__header__links {
+.header__links {
     list-style: none;
     display: flex;
     gap: 24px;
@@ -84,7 +82,7 @@ body {
     line-height: 1.17;
 }
 
-.topsection__header__link {
+.header__links--link {
     position: relative;
 }
 
@@ -99,25 +97,21 @@ body {
     bottom: -10px;
 }
 
-.topsection__header__buttons {
+.header__buttons {
     max-width: 94px;
     display: flex;
     justify-content: space-between;
     gap: 24px;
 }
 
-.topsection__button__night {
+.header__buttons--night {
     height: 40px;
     width: 30px;
-    background-image: url("../images/topsection_sprite.png");
-    background-position-x: -205px;
 }
 
-.topsection__button__account {
+.header__buttons--account {
     height: 40px;
     width: 40px;
-    background-image: url("../images/topsection_sprite.png");
-    background-position-x: -235px;
 }
 
 .topsection__title {
@@ -161,7 +155,6 @@ body {
 .topsection__city {
     position: relative;
     flex: auto;
-    padding-left: 22px;
 }
 
 .topsection__city--label  {
@@ -174,6 +167,10 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.16;
+}
+
+.topsection__city--input {
+    padding-left: 22px;
 }
 
 .topsection__date {
@@ -228,20 +225,14 @@ body {
     padding-bottom: 120px;
 }
 
-.topsection__googleplay {
-    background-image: url("../images/topsection_sprite.png");
-    background-repeat: no-repeat;
-    background-position-x: -275px;
-    min-height: 40px;
+.topsection__apps--googleplay {
     width: 135px;
+    height: 40px;
 }
 
-.topsection__appstore {
-    background-image: url("../images/topsection_sprite.png");
-    background-repeat: no-repeat;
-    background-position-x: -410px;
-    min-height: 40px;
+.topsection__apps--appstore {
     width: 120px;
+    height: 40px;
 }
 
 .advantages__title {
@@ -252,53 +243,44 @@ body {
     background-color: #f5bd41;
     width: 100px;
     height: 4px;
-    margin:0 auto 84px;
+    margin:0 auto 80px;
 }
 
 .advantages__col {
     text-align: center;
 }
 
-.advantages__image {
-    background-image: url("../images/advantages_sprite.png");
+.advantages__col--image {
     width: 100px;
     height: 100px;
-    background-repeat: no-repeat;
-    margin: 0 auto;
 }
 
 .support {
-    background-position-x: 0;
     width: 75px;
 }
 
 .communication {
-    background-position-x: -75px;
     width: 84px;
 }
 
-.booking {
-    background-position-x: -159px;
-}
-
 .reviews {
-    background-position-x: -259px;
     width: 92px;
+    margin: -6px 0 6px;
 }
 
 .advantages__subtitle {
     margin-top: 48px;
 }
 
-.footer_container {
+.footer__container {
     background-color: #10367C;
 }
 
-.footer_row {
+.footer__row {
     color: #FFFFFF;
 }
 
-.footer_col {
+.footer__col {
     list-style: none;
     width: 33.33333%;
     font-style: normal;
@@ -309,15 +291,15 @@ body {
     padding: 0;
 }
 
-.footer_col_title {
+.footer__col--title {
     font-weight: 500;
 }
 
-.footer_link {
+.footer__col--link {
     margin: 24px 0;
 }
 
-.footer_copyright {
+.footer__copyright {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
