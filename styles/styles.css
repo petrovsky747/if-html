@@ -11,6 +11,13 @@ body {
     color: #383838;
 }
 
+.svg_sprite {
+    position: absolute;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
 .container {
     max-width: 1440px;
     padding: 120px 104px 120px;
@@ -39,7 +46,7 @@ body {
     line-height: 0.8;
 }
 
-.topsection__container {
+.topsection-container {
     background-image: url("./../images/topsection_background.jpg") ;
     background-size: cover;
     background-attachment: scroll;
@@ -50,7 +57,7 @@ body {
     padding: 0;
 }
 
-.topsection__header {
+.header {
     display: flex;
     justify-content: space-between;
     padding: 51px 0 202px;
@@ -58,19 +65,17 @@ body {
     margin: 0 auto;
 }
 
-.topsection__logo {
-    background-image: url("../images/topsection_sprite.png");
-    background-repeat: no-repeat;
-    background-position-x: 0;
+.logo {
     width: 205px;
+    height: 40px;
 }
 
-.topsection__header__items {
+.header-items {
     display: flex;
     gap: 51px;
 }
 
-.topsection__header__links {
+.header-links {
     list-style: none;
     display: flex;
     gap: 24px;
@@ -84,11 +89,11 @@ body {
     line-height: 1.17;
 }
 
-.topsection__header__link {
+.header-links__item {
     position: relative;
 }
 
-.active::after {
+.header-links__item--active::after {
     position: absolute;
     display: block;
     content: "";
@@ -99,28 +104,24 @@ body {
     bottom: -10px;
 }
 
-.topsection__header__buttons {
+.header-buttons {
     max-width: 94px;
     display: flex;
     justify-content: space-between;
     gap: 24px;
 }
 
-.topsection__button__night {
+.header-buttons__night {
     height: 40px;
     width: 30px;
-    background-image: url("../images/topsection_sprite.png");
-    background-position-x: -205px;
 }
 
-.topsection__button__account {
+.header-buttons__account {
     height: 40px;
     width: 40px;
-    background-image: url("../images/topsection_sprite.png");
-    background-position-x: -235px;
 }
 
-.topsection__title {
+.topsection-title {
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -132,7 +133,7 @@ body {
     margin-bottom: 145px;
 }
 
-.topsection__form {
+.topsection-form {
     display: flex;
     background: #FFFFFF;
     font-family: 'Roboto', sans-serif;
@@ -158,13 +159,12 @@ body {
     height: 100%;
 }
 
-.topsection__city {
+.topsection-city {
     position: relative;
     flex: auto;
-    padding-left: 22px;
 }
 
-.topsection__city--label  {
+.topsection-city__label  {
     position: absolute;
     top: -44px;
     left: 25px;
@@ -176,14 +176,18 @@ body {
     line-height: 1.16;
 }
 
-.topsection__date {
+.topsection-city__input {
+    padding-left: 22px;
+}
+
+.topsection-date {
     position: relative;
     border: 3px solid #f5bd41;
     border-radius: 8px;
     flex-basis: 259px;
 }
 
-.topsection__date--label {
+.topsection-date__label {
     position: absolute;
     top: -48px;
     left: 20px;
@@ -195,19 +199,19 @@ body {
     line-height: 1.16;
 }
 
-.topsection__guests {
+.topsection-guests {
     flex-basis: 314px;
 }
 
-.topsection__guests--input {
+.topsection-guests__input {
     padding-left: 30px;
 }
 
-.topsection__guests--label {
+.topsection-guests__label {
     display: none;
 }
 
-.topsection__button {
+.topsection-button {
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -221,84 +225,69 @@ body {
     border-radius: 8px;
 }
 
-.topsection__apps {
+.topsection-apps {
     display: flex;
     gap: 16px;
     justify-content: center;
     padding-bottom: 120px;
 }
 
-.topsection__googleplay {
-    background-image: url("../images/topsection_sprite.png");
-    background-repeat: no-repeat;
-    background-position-x: -275px;
-    min-height: 40px;
+.topsection-apps__googleplay {
     width: 135px;
+    height: 40px;
 }
 
-.topsection__appstore {
-    background-image: url("../images/topsection_sprite.png");
-    background-repeat: no-repeat;
-    background-position-x: -410px;
-    min-height: 40px;
+.topsection-apps__appstore {
     width: 120px;
+    height: 40px;
 }
 
-.advantages__title {
+.advantages-title {
     margin-bottom: 20px;
 }
 
-.advantages__highlight {
+.advantages-highlight {
     background-color: #f5bd41;
     width: 100px;
     height: 4px;
-    margin:0 auto 84px;
+    margin:0 auto 80px;
 }
 
-.advantages__col {
+.advantages-col {
     text-align: center;
 }
 
-.advantages__image {
-    background-image: url("../images/advantages_sprite.png");
+.advantages-col__image {
     width: 100px;
     height: 100px;
-    background-repeat: no-repeat;
-    margin: 0 auto;
 }
 
 .support {
-    background-position-x: 0;
     width: 75px;
 }
 
 .communication {
-    background-position-x: -75px;
     width: 84px;
 }
 
-.booking {
-    background-position-x: -159px;
-}
-
 .reviews {
-    background-position-x: -259px;
     width: 92px;
+    margin: -6px 0 6px;
 }
 
-.advantages__subtitle {
+.advantages-col__subtitle {
     margin-top: 48px;
 }
 
-.footer_container {
+.footer-container {
     background-color: #10367C;
 }
 
-.footer_row {
+.footer-row {
     color: #FFFFFF;
 }
 
-.footer_col {
+.footer-col {
     list-style: none;
     width: 33.33333%;
     font-style: normal;
@@ -309,15 +298,15 @@ body {
     padding: 0;
 }
 
-.footer_col_title {
+.footer-col__title {
     font-weight: 500;
 }
 
-.footer_link {
+.footer-col__link {
     margin: 24px 0;
 }
 
-.footer_copyright {
+.footer-copyright {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
