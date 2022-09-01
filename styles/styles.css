@@ -257,17 +257,20 @@ body {
 .topsection-date {
     display: flex;
     justify-items: normal;
-    position: relative;
     border: 1px solid #cecece;
     border-radius: 8px;
     max-width: 259px;
 }
 
-.topsection-date-in__input {
+.check-in, .check-out {
+    position: relative;
+}
+
+.check-in__input {
     padding-left: 22px;
 }
 
-.topsection-date-in__label {
+.check-in__label, .check-out__label {
     position: absolute;
     top: -44px;
     left: 20px;
@@ -279,16 +282,8 @@ body {
     line-height: 1.16;
 }
 
-.topsection-date-out__label {
-    position: absolute;
-    top: -44px;
-    left: 110px;
-    color: #ffffff;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.16;
+.check-out__label {
+    left: -38px;
 }
 
 .separator {
@@ -722,7 +717,11 @@ body {
         position: relative;
     }
 
-    .topsection-date-in__label, .topsection-date-out__label {
+    .check-in, .check-out {
+        width: 100%;
+    }
+
+    .check-in__label, .check-out__label {
         position: absolute;
         top: 11px;
         left: 15px;
@@ -731,10 +730,6 @@ body {
         font-style: normal;
         font-weight: 400;
         line-height: 1.16;
-    }
-
-    .topsection-date-out__label {
-        left: 315px;
     }
 
     .topsection-guests {
@@ -936,6 +931,7 @@ body {
     .topsection-form > div {
         flex: fit-content;
         height: 64px;
+        min-width: 100%;
     }
 
     .input {
