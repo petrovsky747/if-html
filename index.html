@@ -89,10 +89,24 @@
   <symbol id="arrow" viewBox="0 0 9 21" fill="none">
     <path d="M0.941176 19.8235L7.1 11.6118C7.63333 10.9007 7.63333 9.92289 7.1 9.21178L0.941176 1.00002" stroke="#383838" stroke-width="2"/>
   </symbol>
+  <symbol id="cross" viewBox="0 0 26 26" >
+    <g clip-path="url(#a)">
+      <path d="M26 1.486 24.514 0 13 11.514 1.486 0 0 1.486 11.514 13 0 24.514 1.486 26 13 14.486 24.514 26 26 24.514 14.486 13 26 1.486Z" fill="#BFBFBF"/>
+    </g>
+    <defs>
+      <clipPath id="a">
+        <path fill="#fff" d="M0 0h26v26H0z"/>
+      </clipPath>
+    </defs>
+  </symbol>
+  <symbol id="user" viewBox="0 0 50 45">
+    <path d="M28.6518 34.7484C28.6518 32.6923 29.1633 30.7181 30.1248 28.9587C28.7643 28.1915 27.7619 27.6903 27.3425 27.4857C27.2095 27.4243 27.1379 27.2913 27.1379 27.1481V19.0671C28.1506 18.392 28.8257 17.2361 28.8257 15.9268V7.5491C28.8257 3.38584 25.4501 0 21.2766 0H20.3764H19.4763C15.313 0 11.9272 3.37561 11.9272 7.5491V15.9268C11.9272 17.2361 12.6023 18.392 13.615 19.0671V27.1481C13.615 27.2913 13.5331 27.4243 13.4104 27.4857C12.2545 28.0483 6.65917 30.8715 1.473 35.1371C0.531915 35.9043 0 37.0602 0 38.2774V44.016H20.3662H32.9787C32.7025 43.7909 32.4468 43.5454 32.1911 43.2897C29.91 41.0086 28.6518 37.9705 28.6518 34.7484Z" fill="#3077C6"/>
+    <path d="M40.7324 25.4806C35.6179 25.4806 31.4648 29.6336 31.4648 34.7482C31.4648 39.8628 35.6179 44.0158 40.7324 44.0158C45.847 44.0158 50 39.8628 50 34.7482C50 29.6336 45.8572 25.4806 40.7324 25.4806ZM46.1539 36.0984H42.0827V40.1696H39.3822V36.0984H35.311V33.3979H39.3822V29.3267H42.0827V33.3979H46.1539V36.0984Z" fill="#3077C6"/>
+  </symbol>
 </svg>
 <section class="topsection">
   <div class="container topsection-container">
-    <div class="header">
+    <header class="header">
       <svg class="logo">
         <use href="#logo"/>
       </svg>
@@ -113,7 +127,7 @@
           </svg>
         </div>
       </div>
-    </div>
+    </header>
     <h1 class="title topsection-title">Discover stays<br> to live, work or just relax</h1>
     <div class="form">
       <form class="topsection-form" action="./" method="get">
@@ -265,8 +279,95 @@
     </div>
   </div>
 </section>
+<section class="destinations">
+  <div class="container destinations-container">
+    <h1 class="title destinations-title">The best destinations</h1>
+    <form class="destinations-form" action="./" method="get">
+      <button class="button destinations-button regions">Regions</button>
+      <button class="button destinations-button cities">Cities</button>
+      <button class="button destinations-button places">Places</button>
+    </form>
+    <div class="row destinations-row destinations-images">
+      <div class="col-lg-3 col-md-6 col-sm-3">
+        <div class="destinations-col maldives">
+          <img class="destinations-col__image" src="./images/maldives.jpg" alt="maldives">
+          <a class="destinations-link-hidden">Book now</a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-3">
+        <div class="destinations-col spain">
+          <img class="destinations-col__image" src="./images/spain.jpg" alt="spain">
+          <a class="destinations-link-hidden">Book now</a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-3">
+        <div class="destinations-col norway">
+          <img class="destinations-col__image" src="./images/norway.jpg" alt="norway">
+          <a class="destinations-link-hidden">Book now</a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-3">
+        <div class="destinations-col island">
+          <img class="destinations-col__image" src="./images/island.jpg" alt="island">
+          <a class="destinations-link-hidden">Book now</a>
+        </div>
+      </div>
+      <div class="destinations-arrow">
+        <svg class="arrow_svg">
+          <use href="#arrow"/>
+        </svg>
+      </div>
+    </div>
+    <div class="row destinations-row destinations-links">
+      <div class="col-lg-3 col-md-6 col-sm-3">
+        <div class="destinations-col maldives">
+          <p class="link destinations-col__link">Maldives</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-3">
+        <div class="destinations-col spain">
+          <p class="link destinations-col__link">Spain</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-3">
+        <div class="destinations-col norway">
+          <p class="link destinations-col__link">Norway</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-3">
+        <div class="destinations-col island">
+          <p class="link destinations-col__link">Island</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="sign-up">
+  <div class="container sign-up-container">
+    <div class="sign-up-row">
+      <svg class="sign-up-cross">
+        <use href="#cross"/>
+      </svg>
+      <div class="sign-up-circle">
+        <svg class="sign-up-circle__svg">
+          <use href="#user"/>
+        </svg>
+      </div>
+      <div class="sign-up-logo">
+        <svg class="sign-up-logo__image">
+          <use href="#logo-footer"></use>
+        </svg>
+      </div>
+      <div class="sign-up-col">
+        <h2 class="sign-up-col__title">Sign up and get 20% off your first booking</h2>
+        <button class="sign-up-col__button">Sign up</button>
+      </div>
+      <p class="sign-up-link">Install</p>
+    </div>
+  </div>
+</section>
 <section class="footer">
-  <div class="container footer-container">
+  <footer class="container footer-container">
     <div class="logo-footer">
       <svg class="logo-footer__img">
         <use href="#logo-footer"/>
@@ -296,9 +397,8 @@
       </ul>
     </div>
     <p class="footer-copyright">© 2020 Triphouse, Inc. All rights reserved</p>
-  </div>
+  </footer>
 </section>
-
 </body>
 </html>
 
