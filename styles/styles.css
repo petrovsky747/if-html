@@ -111,7 +111,7 @@ body {
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-position: top;
-    order: 0;
+    background-size: cover;
 }
 
 .topsection-container {
@@ -377,10 +377,6 @@ body {
     height: 40px;
 }
 
-.advantages {
-    order: 1;
-}
-
 .advantages-title {
     position: relative;
 }
@@ -428,7 +424,6 @@ body {
 
 .homes {
     background-color: #eaf0f9;
-    order: 2;
 }
 
 .homes-images {
@@ -473,10 +468,6 @@ body {
     width: 9px;
     height: 21px;
     margin: auto;
-}
-
-.destinations {
-    order: 3;
 }
 
 .destinations-container {
@@ -583,10 +574,6 @@ body {
     box-shadow: 1px 4px 4px rgba(100, 100, 100, 0.2);
 }
 
-.sign-up {
-    order: 4;
-}
-
 .sign-up-container {
     padding: 0 16px;
 }
@@ -652,6 +639,136 @@ body {
     font-size: 18px;
     line-height: 1.17;
     margin-bottom: 0;
+}
+
+.review-container {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.review-title {
+    margin-bottom: 111px;
+}
+
+.review-images {
+    position: relative;
+}
+
+.review-col {
+    position: relative;
+    height: 100%;
+}
+
+.review-col__image {
+    width: 100%;
+    max-width: 400px;
+}
+
+.review-col__price {
+    position: absolute;
+    background-color: rgba(56, 56, 56, .7);
+    color: #ffffff;
+    width: 100%;
+    height: 48px;
+    bottom: 2px;
+    padding: 17px 24px;
+}
+
+.review-arrow {
+    display: flex;
+    background: #f3f3f4;
+    width: var(--arrow-size);
+    height: var(--arrow-size);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(25%, -50%);
+    box-shadow: 1px 4px 4px rgba(100, 100, 100, 0.2);
+}
+
+.review-items {
+    margin-top: -4px;
+    padding: 0 22px 24px 24px;
+    background-color: #eaf0f9;
+}
+
+.review-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 24px;
+}
+
+.review-score {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.review-score__block {
+    background-color: #10367c;
+    color: #ffffff;
+    font-weight: 600;
+    width: 48px;
+    height: 32px;
+    border-radius: 8px;
+    text-align: center;
+    padding: 4px;
+    margin-top: 5px;
+}
+
+.review-score__subtitle {
+    color: #bfbfbf;
+    font-size: 14px;
+}
+
+.review-links__name {
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.review-links__destination {
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 16px;
+}
+
+.person {
+    justify-content: flex-start;
+    gap: 16px;
+    padding-left: 6px;
+}
+
+.person-image {
+    padding-top: 2px;
+}
+
+.person-image__svg {
+    width: 54px;
+    height: 54px;
+}
+
+.person-data {
+    padding: 8px 0 0 4px;
+}
+
+.person-data__country {
+    display: flex;
+    color: #bfbfbf;
+    text-align: start;
+    align-items: center;
+}
+
+.icon {
+    margin-left: -5px;
+    width: 2em;
+}
+
+.person-comment {
+    text-align: left;
 }
 
 .footer {
@@ -1096,6 +1213,22 @@ body {
         color: #3077c6;
     }
 
+    .review-col__price {
+        bottom: 20px;
+    }
+
+    .review_hotel {
+        display: none;
+    }
+
+    .review-links__name, .review-links__destination {
+        font-size: 18px;
+    }
+    
+    .review-score__subtitle {
+        text-align: right;
+    }
+    
     .logo-footer {
         display: flex;
         fill: #ffffff;
@@ -1144,6 +1277,11 @@ body {
         --arrow-size: 28px;
     }
 
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
     .col-sm-1 {
         width: var(--col-width);
     }
@@ -1166,6 +1304,34 @@ body {
 
     .col-sm-6 {
         width: calc(var(--col-width) * 6);
+    }
+
+    .topsection {
+        order: 0;
+    }
+
+    .advantages {
+        order: 1;
+    }
+
+    .homes {
+        order: 2;
+    }
+
+    .destinations {
+        order: 3;
+    }
+
+    .review {
+        order: 4;
+    }
+
+    .sign-up {
+        order: 5;
+    }
+
+    .footer {
+        order: 6;
     }
 
     .title {
@@ -1432,6 +1598,78 @@ body {
         font-size: 14px;
         line-height: 1.17;
         color: #3077c6;
+    }
+
+    .review {
+        background-color: #eaf0f9;
+    }
+
+    .review-items {
+        padding: 0;
+    }
+
+    .review-item {
+        padding-top: 6px;
+    }
+
+    .review_hostel, .review-arrow, .review-col__price {
+        display: none;
+    }
+
+    .review-col__image {
+        max-width: 325px;
+    }
+
+    .review-links__name, .review-links__destination{
+        font-size: 15px;
+        padding-top: 2px;
+    }
+
+    .review-score__block {
+        width: 40px;
+        height: 26px;
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    .review-score__subtitle {
+        font-size: 12px;
+    }
+
+    .person {
+        padding-top: 12px;
+    }
+
+    .person-image__svg {
+        width: 44px;
+        height: 44px;
+    }
+
+    .person-data {
+        font-size: 15px;
+    }
+
+    .person-comment {
+        padding-top: 16px;
+        font-size: 15px;
+    }
+
+    .reviews-slider {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+    }
+
+    .circle {
+        width: 8px;
+        height: 8px;
+        margin-top: 32px;
+        border: 1px solid #333333;
+        border-radius: 50%;
+    }
+
+    .circle:hover {
+        background-color: #333333;
     }
 
     .logo-footer {
